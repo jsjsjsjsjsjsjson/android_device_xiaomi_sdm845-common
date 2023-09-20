@@ -47,3 +47,10 @@ fi
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
 real_path=${misc_link##*>}
 setprop persist.vendor.mmi.misc_dev_path $real_path
+
+# Make lzo ZRAM
+echo 8 > /sys/block/zram0/max_comp_streams
+echo lzo > /sys/block/zram0/comp_algorithm
+echo 3221225472 > /sys/block/zram0/disksize
+mkswap /dev/block/zram0
+swapon /dev/block/zram0
