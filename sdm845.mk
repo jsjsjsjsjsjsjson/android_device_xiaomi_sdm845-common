@@ -391,5 +391,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+PRODUCT_PACKAGES += \
+    Aperture
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm845-common/sdm845-common-vendor.mk)
