@@ -867,3 +867,9 @@ vendor/lib64/libwfdhdcpcp.so|ba43f54ee4e34562b31c9595d2ad0639033e8fdc
 
 # WiFi Display (vendor) - from lemonadep - TP1A.220624.003
 vendor/etc/wfdconfig.xml|4f863ac9a71bafff8afc14e8fab26af979bbb1d6
+
+# Protobuf - from LineageOS 20
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+
+vendor/lib/libplatformconfig.so
+vendor/lib64/libplatformconfig.so
