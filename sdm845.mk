@@ -394,5 +394,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     Camera2
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm845-common/sdm845-common-vendor.mk)
