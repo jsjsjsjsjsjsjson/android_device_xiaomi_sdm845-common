@@ -65,7 +65,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
 
         mScenes = (ListPreference) findPreference(PREF_SCENE);
         mScenes.setOnPreferenceChangeListener(this);
-        mScenes.setEnabled(mDiracUtils != null && enhancerEnabled);
+//        mScenes.setEnabled(mDiracUtils != null && enhancerEnabled);
     }
 
     @Override
@@ -78,7 +78,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
                 DiracUtils.setLevel(String.valueOf(newValue));
                 return true;
             case PREF_SCENE:
-                mDiracUtils.setScenario(Integer.parseInt(newValue.toString()));
+  //              mDiracUtils.setScenario(Integer.parseInt(newValue.toString()));
                 return true;
             default:
                 return false;
