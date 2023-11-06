@@ -200,6 +200,8 @@ int InputFFDevice::play(int effectId, uint32_t timeoutMs, long *playLengthMs) {
 #endif
 
     /* For QMAA compliance, return OK even if vibrator device doesn't exist */
+#pragma GCC diagnostic ignored "-Wmisleading-indentation"
+#pragma clang diagnostic ignored "-Wmisleading-indentation"
     if (mVibraFd == INVALID_VALUE) {
         if (playLengthMs != NULL)
             *playLengthMs = 0;
