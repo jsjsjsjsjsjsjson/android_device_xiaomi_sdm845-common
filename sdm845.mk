@@ -382,8 +382,13 @@ PRODUCT_PACKAGES += \
     hostapd \
     android.hardware.wifi.hostapd@1.0.vendor \
     android.hardware.wifi-service \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
+    wificond \
+    wifilogd \
+    wpa_cli \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
